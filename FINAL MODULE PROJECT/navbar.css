@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+.navbar-brand2 h5{
+color: rgb(235, 235, 235);
+}
+
+
+
+
+
+
+.navbt{
+  position: relative;
+  height: 40px;
+  width: 150px;
+ margin: 10px 20px;
+  border-radius: 50px;
+  border: none;
+  outline: none;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: background 0.5s;
+}
+.navbt:first-child:hover{
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+}
+.navbt:last-child:hover{
+  background: linear-gradient(90deg, #fa7199, #f5ce62, #e43603, #fa7199);
+  background-size: 200%;
+}
+.navbt:first-child:before,
+.navbt:last-child:before{
+  content: '';
+  position: absolute;
+  background: inherit;
+  top: -5px;
+  right: -5px;
+  bottom: -5px;
+  left: -5px;
+  border-radius: 50px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+.navbt:first-child:hover:before,
+.navbt:last-child:hover:before{
+  opacity: 1;
+  z-index: -1;
+}
+.navbt:hover{
+  z-index: 1;
+  animation: glow 8s linear infinite;
+}
+
+
+@keyframes glow {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}

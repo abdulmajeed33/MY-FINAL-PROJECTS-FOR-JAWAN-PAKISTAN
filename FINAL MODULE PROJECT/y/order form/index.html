@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Orde Form</title>
+	<link rel="stylesheet" href="style.css">
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.8.1/firebase-database.js"></script>
+</head>
+<body>
+<!-- pre loader -->
+
+<!-- <div id="preloader">
+  
+</div> -->
+
+
+
+
+
+<div class="wrapper">
+    <div class="title">
+      Order Form
+    </div>
+    <div class="form">
+       <div class="inputfield">
+          <label>First Name</label>
+          <input id="first-name" type="text" class="input">
+       </div>  
+        <div class="inputfield">
+          <label>Last Name</label>
+          <input id="last-name" type="text" class="input">
+       </div>  
+       <div class="inputfield">
+        <label>Your Order Detail</label>
+        <textarea id="order-detail" class="textarea"></textarea>
+     </div> 
+      <!-- <div class="inputfield">
+          <label>Confirm Password</label>
+          <input type="password" class="input">
+       </div>  -->
+        <div class="inputfield">
+          <label>Gender</label>
+          <div class="custom_select">
+            <select>
+              <option value="">Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+            </select>
+          </div>
+       </div> 
+        <div class="inputfield">
+          <label>Email Address</label>
+          <input id="email" type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Phone Number</label>
+          <input id="phone-number" type="text" class="input">
+       </div> 
+      <div class="inputfield">
+          <label>Address</label>
+          <textarea id="adress" class="textarea"></textarea>
+       </div> 
+      <div class="inputfield">
+          <label>Postal Code</label>
+          <input id="postal-code" type="text" class="input">
+       </div> 
+      <div class="inputfield terms">
+          <label class="check">
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <p>Agreed to terms and conditions</p>
+       </div> 
+
+
+      <div class="inputfield">
+        <input type="submit" value="Place Your Order Now" class="btn" id="submit" onclick="addTodo(),popup()">
+      </div>
+    </div>
+ 
+</div>	
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="./app.js"></script>
+</body>
+</html>

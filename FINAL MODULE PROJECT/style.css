@@ -1,0 +1,105 @@
+
+
+#arrowPoint2{
+float: right;
+}
+
+#arrowPoint1{
+    margin-bottom: 9px;
+
+    }
+
+
+#arrowIcon img{
+cursor: pointer;
+}
+
+.card1{
+width: 70%;
+margin: 10px auto;
+}
+
+
+.title-text{
+
+    padding: 10px 15px;
+}
+
+
+
+.car-body1{
+width: 40%;
+
+}
+
+
+.navbg{
+background-color: black;
+
+}
+
+
+.money{
+    font-size: 15px;
+    text-align: center;
+    color: gray;
+}
+
+
+
+
+
+
+/* card 2 */
+
+
+        .card2{
+        float: right;
+        }
+        .card21{
+        width: 60%;
+        margin: 0px auto;
+        }
+        
+
+.textcard{
+text-align: center;
+font-size: 14px;
+}
+.btncart{
+   display: block; 
+   margin: 0px auto;
+   
+}
+
+
+.cartlink{
+
+text-decoration: none;
+
+}
+
+/* button */
+
+
+#preloader{
+    background: black url(./img/yy3.gif) no-repeat center center;
+    background-size: 10%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index:100 ;
+}
+
+
+.next img{
+display: block;
+margin: 10px auto;
+background-color: rgba(8, 7, 12, 0.232);
+}
+
+.next-text{
+color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
